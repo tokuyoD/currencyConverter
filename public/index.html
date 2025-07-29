@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>匯率轉換器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💱 匯率轉換器</h1>
+        <form class="converter-form" id="converterForm">
+            <div class="currency-row">
+                <div class="amount-input">
+                    <label for="fromAmount">金額</label>
+                    <input type="number" id="fromAmount" step="0.01" min="0" value="1" required>
+                </div>
+                <div class="currency-select">
+                    <label for="fromCurrency">從</label>
+                    <select id="fromCurrency" required>
+                        <option value="USD">USD 美元</option>
+                        <option value="EUR">EUR 歐元</option>
+                        <option value="GBP">GBP 英鎊</option>
+                        <option value="JPY">JPY 日圓</option>
+                        <option value="TWD" selected>TWD 台幣</option>
+                        <option value="CNY">CNY 人民幣</option>
+                        <option value="KRW">KRW 韓圓</option>
+                        <option value="HKD">HKD 港幣</option>
+                        <option value="SGD">SGD 新幣</option>
+                        <option value="AUD">AUD 澳幣</option>
+                        <option value="CAD">CAD 加幣</option>
+                        <option value="CHF">CHF 瑞士法郎</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="button" class="swap-btn" id="swapBtn" title="交換幣別">⇅</button>
+
+            <div class="currency-row">
+                <div class="amount-input">
+                    <label for="toAmount">轉換後金額</label>
+                    <input type="number" id="toAmount" step="0.01" readonly>
+                </div>
+                <div class="currency-select">
+                    <label for="toCurrency">到</label>
+                    <select id="toCurrency" required>
+                        <option value="USD" selected>USD 美元</option>
+                        <option value="EUR">EUR 歐元</option>
+                        <option value="GBP">GBP 英鎊</option>
+                        <option value="JPY">JPY 日圓</option>
+                        <option value="TWD">TWD 台幣</option>
+                        <option value="CNY">CNY 人民幣</option>
+                        <option value="KRW">KRW 韓圓</option>
+                        <option value="HKD">HKD 港幣</option>
+                        <option value="SGD">SGD 新幣</option>
+                        <option value="AUD">AUD 澳幣</option>
+                        <option value="CAD">CAD 加幣</option>
+                        <option value="CHF">CHF 瑞士法郎</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="convert-btn" id="convertBtn">
+                💸 立即轉換
+            </button>
+        </form>
+
+        <div id="result" class="result"></div>
+        <div id="error" class="error" style="display: none;"></div>
+        <div id="rateInfo" class="rate-info" style="display: none;"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
