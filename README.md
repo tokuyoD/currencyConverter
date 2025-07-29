@@ -48,8 +48,7 @@ currency-converter/
 
 1. **克隆專案**
    ```bash
-   git clone https://github.com/tokuyoD
-  /currency-converter.git
+   git clone https://github.com/yourusername/currency-converter.git
    cd currency-converter
    ```
 
@@ -218,7 +217,7 @@ MIT License - 請參閱 [LICENSE](LICENSE) 檔案
 如有問題或建議，請通過以下方式聯絡：
 
 - 📧 Email: your.email@example.com
-- 🐛 Issues: [GitHub Issues](https://github.com/tokuyoD/currency-converter/issues)
+- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/currency-converter/issues)
 
 ## 🔮 待開發功能
 
